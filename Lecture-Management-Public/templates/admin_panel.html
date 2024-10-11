@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='common_style.css') }}"
+    />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div id="main-nav-container">
+        <h4 id="nav-username">Hello, {{ name }}</h4>
+        <button class="buttons" onclick="window.location.replace('/logout')">
+          Logout
+          <span class="material-icons-outlined md-18 input-icon">logout</span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="download-container">
+      <h5>record.xlsx</h5>
+      <button
+        class="btn btn-primary"
+        id="download-button"
+        onclick="window.open('/download')"
+      >
+        Download
+        <span class="material-icons-outlined md-18 input-icon">download</span>
+      </button>
+    </div>
+    <h5 align="center">
+      Click here to <a href="/user">Submit</a> lecture details
+    </h5>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+    font-family: 'Ubuntu', sans-serif;}
+
+#logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#logo {
+    width: 40em;
+    height: auto;
+    text-align: center;
+}
+
+::placeholder {
+    color: grey;
+    opacity: 1;
+}
+  
+:-ms-input-placeholder {
+    color: grey;
+}
+  
+::-ms-input-placeholder { 
+    color: grey;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
+}
+
+.form-container {
+    display: flex;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 0px 0px rgb(22, 22, 22);
+    justify-content: center;
+    height: 100%;
+
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container .form-control {
+    padding-left: 2.375rem;
+}
+
+.input-container .input-icon {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: grey;
+
+}
+
+.form-label {
+    color: rgb(34, 14, 105);
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.form-input {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-button {
+    display: inline;
+}
+
+
+.login-button {
+    margin: auto;
+    display: block;
+}
+
+.prod-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 100px;
+    /* margin: 20px; */
+}
+
+
+/* =================== Navbar =================== */
+
+#main-nav-container  {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+}
+
+
+#nav-username {
+    font-size: 18px;
+    color: grey;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 1rem;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 4px;
+    border: 0px;
+    font-size: 18px;
+    background-color: rgb(255, 100, 100);
+    border-radius: 4px;
+    transition: 0.2s all ease-in-out;
+}
+
+#nav-username {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: black;
+    margin: 0px;
+    text-align: center;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+/* =================== Navbar END =================== */
+
+/* =================== Admin Download =================== */
+
+#download-container {
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 0px 16px;
+    border-radius: 8px;
+}
+
+#download-container h5 {
+    color: white;
+    margin: 0px;
+}
+
+#download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* =================== Admin Download END =================== */
+
+
+
+#time-interval-container {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.input-group-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+#checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+#option-buttons-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#reset-button {
+    background-color: rgb(255, 100, 100);
+    border: 0px;
+}
+
+#form-anchor-text {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-form {
+    padding: 48px 32px;
+    margin-top: 24px;
+}
+
+.user-form {
+    padding: 48px 56px;
+}
